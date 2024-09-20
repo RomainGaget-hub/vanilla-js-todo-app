@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <div id="wrapper">
+        <header>
+            <h1>My Todo App</h1>
+        </header>
+        <main>
+            <div id="action-group">
+                <button id="filter-all">All Tasks</button>
+                <button id="filter-active">Active Tasks</button>
+                <button id="filter-completed">Completed Tasks</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="new-task" placeholder="Add a new task">
+                <button id="add-task-button">Add Task</button>
+            </div>
+            <ul id="task-list">
+                <!-- List items will be added here -->
+            </ul>
+            <div id="footer">
+                <button id="clear-tasks-button">Clear all tasks</button>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

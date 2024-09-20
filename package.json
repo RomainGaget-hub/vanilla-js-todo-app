@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "todo app in vanilla JS",
+  "main": "app.js",
+  "dependencies": {
+    "jsdom": "^25.0.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Romain Gaget",
+  "license": "MIT"
+}

@@ -1,0 +1,278 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Main container styling */
+main {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+#new-task {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Button styling */
+#add-task-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-task-button:hover {
+    background-color: #218838;
+}
+
+#add-task-button:active {
+    background-color: #1e7e34;
+}
+
+#clear-tasks-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#clear-tasks-button:hover {
+    background-color: #c82333;
+}
+
+#clear-tasks-button:active {
+    background-color: #bd2130;
+}
+
+/* Task list styling */
+#task-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+/* Task text styling */
+#task-list span {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+/* Checkbox styling */
+#task-list input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+/* Completed task styling */
+#task-list input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Footer styling */
+#footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Toggle dark mode button styling */
+#toggle-dark-mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#toggle-dark-mode:hover {
+    background-color: #0056b3;
+}
+
+#toggle-dark-mode:active {
+    background-color: #004085;
+}
+
+/* Dark mode styling */
+.dark-mode {
+    background-color: #333;
+
+}
+
+.dark-mode #task-list li {
+    border-color: #555;
+}
+
+.dark-mode #task-list button {
+    background-color: #dc3545;
+}
+
+.dark-mode #task-list button:hover {
+    background-color: #c82333;
+}
+
+.dark-mode #task-list button:active {
+    background-color: #bd2130;
+}
+
+.dark-mode #task-list input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.dark-mode #footer {
+    color: #fff;
+}
+
+.dark-mode #new-task {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.dark-mode #new-task::placeholder {
+    color: #ccc;
+}
+
+.dark-mode #add-task-button {
+    background-color: #28a745;
+}
+
+.dark-mode #add-task-button:hover {
+    background-color: #218838;
+}
+
+.dark-mode #add-task-button:active {
+    background-color: #1e7e34;
+}
+
+.dark-mode #clear-tasks-button {
+    background-color: #dc3545;
+}
+
+.dark-mode #clear-tasks-button:hover {
+    background-color: #c82333;
+}
+
+.dark-mode #clear-tasks-button:active {
+    background-color: #bd2130;
+}
+
+.dark-mode #toggle-dark-mode {
+    background-color: #007bff;
+}
+
+.dark-mode #toggle-dark-mode:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode #toggle-dark-mode:active {
+    background-color: #004085;
+}
+
+/* Action group styling */
+#action-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#action-group button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px 5px;
+
+}
+
+#action-group button:hover {
+    background-color: #0056b3;
+}
+
+#action-group button:active {
+    background-color: #004085;
+}
+
+/* Delete and Edit button styling */
+#task-list button {
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#delete-task-button {
+    background-color: #dc3545;
+}
+
+#delete-task-button:hover {
+    background-color: #c82333;
+}
+
+#edit-task-button {
+    background-color: #ffc107;
+    margin-right: 5px;
+}
